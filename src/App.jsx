@@ -1,10 +1,15 @@
 import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import ChatPage from './pages/ChatPage'
+ 
 
 const App = () => {
   return (
-    <div className='bg-amber-300 h-screen w-full'>
- ggg
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/chat' element={ChatPage}/> 
+    </Routes>
+    </BrowserRouter>
   )
 }
 
